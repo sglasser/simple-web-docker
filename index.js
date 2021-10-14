@@ -10,7 +10,7 @@ app.get("/test/:param", (req, res) => {
   res.send('Hello!');
 })
 
-app.listen(9090, () => {
+app.listen(80, () => {
   console.log("v3")
-  console.log('Listening on port 9090');
+  console.log('Listening on port 80');
 });
