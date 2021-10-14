@@ -10,7 +10,9 @@ app.get("/test/:param", (req, res) => {
   res.send('Hello!');
 })
 
-app.listen(80, () => {
+const port = process.env.PORT || 8080; 
+
+app.listen(port, () => {
   console.log("v3")
-  console.log('Listening on port 80');
+  console.log(`Listening on port ${port}`);
 });
